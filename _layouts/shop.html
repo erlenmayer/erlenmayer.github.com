@@ -1,0 +1,32 @@
+---
+rel: ../../
+---
+{% include header.html %}
+	<body class="shop batman">
+		<div class="robin">
+			<div class="wrap">
+				<header class="picture">
+					<img src="../../assets/img/{{ page.logo }}" alt="Logo of {{ page.title }}" class="le-logo hero">
+					<img src="../../assets/img/{{ page.shop }}" alt="Shop of {{ page.title }}" class="le-shop hero">
+					<div class="clearfix"></div>
+					<h1>{{ page.title }}</h1>
+				</header>
+				<a title="Back to main" href="../../index.html" class="exit-button">
+					<span class="no-read no-select">&times;</span>
+					<span class="no-see">Back&nbsp;to main&nbsp;page</span>
+				</a>
+				{{ content }}
+				<p class="note">
+					See more at their website:
+					{% if page.link %}
+						<a href="http://{{ page.link }}">{{ page.link }}</a>
+					{% elsif page.title == "UCC" %}
+						<a href="http://lmgtfy.com/?q=ucc+coffee+cafe+terrace">No Website</a>
+					{% else %}
+						No Website
+					{% endif %}
+				</p>
+			</div>
+		</div>
+	
+{% include footer.html %}

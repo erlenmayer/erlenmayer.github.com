@@ -1,0 +1,32 @@
+---
+title: Home
+rel: 
+---
+
+{% include header.html %}
+	<body class="main">
+		<header class="header" id="header">
+			<div class="logo-holder">
+				<img src="assets/img/logo.jpg" alt="Logo" class="logo">
+			</div>
+			<h1>Erlenmayer Presents</h1>
+			<p>A collection of the best coffee shops in Ayala</p>
+		</header>
+		<div class="header-fix"></div>
+		<!-- <div class="colorfy">
+			<div class="c c-1"></div>
+			<div class="c c-2"></div>
+			<div class="c c-3"></div>
+			<div class="c c-4"></div>
+			<div class="c c-5"></div>
+			<div class="clearfix"></div>
+		</div> -->
+		<div id="mt"></div>
+		<div class="shops batman" id="shops">
+			<div class="wrap">
+				{{ content }}
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div id="mb"></div>
+{% include footer.html %}
