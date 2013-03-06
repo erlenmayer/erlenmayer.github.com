@@ -11,7 +11,7 @@ rel: ../../
 					<div class="clearfix"></div>
 					<h1>{{ page.title }}</h1>
 				</header>
-				<a title="Back to main" href="../../index.html" class="exit-button">
+				<a title="Back to main" href="../../" class="exit-button">
 					<span class="no-read no-select">&times;</span>
 					<span class="no-see">Back&nbsp;to main&nbsp;page</span>
 				</a>
@@ -19,9 +19,9 @@ rel: ../../
 				<p class="note">
 					See more at their website:
 					{% if page.link %}
-						<a href="http://{{ page.link }}">{{ page.link }}</a>
+						<a href="//{{ page.link }}">{{ page.link }}</a>
 					{% elsif page.title == "UCC" %}
-						<a href="http://lmgtfy.com/?q=ucc+coffee+cafe+terrace">No Website</a>
+						<a href="//lmgtfy.com/?q=ucc+coffee+cafe+terrace">No Website</a>
 					{% else %}
 						No Website
 					{% endif %}
